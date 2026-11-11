@@ -1,0 +1,143 @@
+/* Universal Selector */
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding-top: 55px;
+    background-color: #fff8e7;
+    text-align: center;
+    color: #493525;
+}
+
+/* FIXED POSITIONING */
+/* Navigation bar stays at the top */
+.top-bar {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 100;
+}
+
+/* Header */
+header {
+    background-color: #ffe0b2;
+    padding: 25px;
+}
+
+header h1 {
+    color: #e65100;
+    font-size: 35px;
+}
+
+/* RELATIVE POSITIONING */
+/* Pet of the Month note shifts right */
+.pet-note {
+    background-color: #ffcc80;
+    color: #7b3f00;
+    padding: 12px;
+    width: 250px;
+    margin: 25px auto;
+    font-weight: bold;
+    border-radius: 10px;
+
+    position: relative;
+    left: 30px;
+}
+
+/* Pet Profile Card */
+.pet-card {
+    background-color: white;
+    width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #d7b899;
+
+    /* Parent for absolute positioning */
+    position: relative;
+}
+
+/* Pet Image */
+.pet-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ABSOLUTE POSITIONING */
+/* Badge pinned to card corner */
+.adopted-badge {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Pet Details */
+.pet-card h2 {
+    color: #e65100;
+    font-size: 28px;
+}
+
+.pet-card ul {
+    text-align: left;
+    line-height: 2;
+}
+
+/* STICKY POSITIONING */
+/* Section label sticks while scrolling */
+.sticky-label {
+    background-color: #388e3c;
+    color: white;
+    padding: 18px;
+    font-size: 21px;
+    font-weight: bold;
+
+    position: sticky;
+    top: 55px;
+
+    z-index: 50;
+}
+
+/* Activities Section */
+.activities {
+    padding: 20px;
+}
+
+.activity-card {
+    background-color: #fff3e0;
+    border: 2px solid #ffb74d;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 12px;
+}
+
+.activity-card h3 {
+    color: #e65100;
+}
+
+/* Footer */
+footer {
+    background-color: #5d4037;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+}
